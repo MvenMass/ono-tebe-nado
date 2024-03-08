@@ -3,15 +3,21 @@
 .header__blog {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding: 43px 24px 78px;
+    padding: 31px 24px 93px;
 }
 
 .headder__list {
     display: flex;
     justify-content: space-evenly;
+    gap: 10px;
     list-style: circle;
     text-align: center;
     font-size: 18px;
+}
+
+.accend-active {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
 }
 
 .accend {
@@ -33,11 +39,11 @@
 }
 
 .header__address {
-    grid-column: 10/13;
+    padding-top: 8px;
+    grid-column: 10 / 13;
     font-size: 18px;
-    line-height: 146%;
+    line-height: 133%;
 }
-
 
 .cover {
     color: #fff;
@@ -48,7 +54,7 @@
     background-image: url(/images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 183px;
+    margin-bottom: 178px;
 }
 
 .cover__title-block {
@@ -57,13 +63,12 @@
 }
 
 .cover__title {
-    padding: 165px 50px 0;
+    padding: 165px 22px 125px 50px;
     font-weight: 700;
     font-size: 100px;
     line-height: 122%;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    margin-bottom: 135px;
 }
 
 .aligned-text {
@@ -86,33 +91,34 @@
 }
 
 .center-letter-spacing {
-    letter-spacing: 56px;
+    letter-spacing: 84px;
 }
 
 .right-letter-spacing {
-    letter-spacing: 20px;
+    letter-spacing: 29px;
 }
 
-.no-letter-spacing {
-    letter-spacing: 20px;
+.letter-spacing-right-extended {
+    letter-spacing: 18px;
 }
 
 
 .cover__description {
     display: flex;
-    justify-content: space-evenly;
+    gap: 79px;
     align-items: center;
     position: relative;
     z-index: 2;
-    padding-bottom: 51px;
+    padding-bottom: 50px;
 }
 
 .cover__description-text {
+    margin-left: 76px;
     font-weight: 400;
     font-size: 22px;
     line-height: 127%;
     text-transform: uppercase;
-    word-spacing: 40px;
+    word-spacing: 19px;
 }
 
 .bet-button {
@@ -127,7 +133,7 @@
 }
 
 .lots {
-    margin-bottom: 189px;
+    margin-bottom: 179px;
 }
 
 .lots__heading {
@@ -210,14 +216,13 @@
 
 .about {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(7, 60px);
-    gap: 25px;
-    margin-bottom: 137px;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(6, 102px);
+    margin-bottom: 129px;
 }
 
 .column-left {
-    justify-self: center;
+    grid-column: 2 / 2;
 }
 
 .about__logo {
@@ -236,22 +241,22 @@
 }
 
 .column-right {
-    grid-column: 2 / 3;
-    grid-row: 2 / 5;
+    grid-column: 4 / 14;
+    grid-row: 2 / 2;
 }
 
 .about__title {
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
-    margin-bottom: 108px;
+    margin-bottom: 98px;
 }
 
 .about__text {
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
-    letter-spacing: 0.01em;
+    padding-right: 29px;
 }
 
 .about__text-margin {
