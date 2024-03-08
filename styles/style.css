@@ -3,7 +3,7 @@
 .header__blog {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding: 31px 24px 93px;
+    padding: 86px 24px 93px;
 }
 
 .headder__list {
