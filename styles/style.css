@@ -256,7 +256,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
-    padding-right: 29px;
+    padding-right: 26px;
 }
 
 .about__text-margin {
@@ -277,6 +277,10 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 135%;
+}
+
+.footer__menu {
+    padding-left: 40px;
 }
 
 .footer__list {
