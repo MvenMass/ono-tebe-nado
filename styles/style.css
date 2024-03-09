@@ -15,14 +15,17 @@
     font-size: 18px;
 }
 
-.accend-active {
+.header__link {
     text-decoration: none;
     border-bottom: 1px solid #000;
 }
 
 .accend {
-    text-decoration: none;
     list-style: none;
+}
+
+.header__link_active {
+    text-decoration: none;
 }
 
 .header__nav {
@@ -41,6 +44,10 @@
 .header__address {
     padding-top: 8px;
     grid-column: 10 / 13;
+}
+
+.address {
+    font-weight: 400;
     font-size: 18px;
     line-height: 133%;
 }
@@ -63,43 +70,42 @@
 }
 
 .cover__title {
-    padding: 165px 22px 125px 50px;
+    padding: 157px 48px 132px 52px;
     font-weight: 700;
     font-size: 100px;
-    line-height: 122%;
-    letter-spacing: 0.3em;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .aligned-text {
-    letter-spacing: 10px;
+    line-height: 100%;
+    letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
     display: block;
     text-align: center;
-    letter-spacing: 12px;
+    line-height: 130%;
+    letter-spacing: 0.3em;
 }
 
 .aligned-text_right {
     display: block;
     text-align: right;
+    line-height: 117%;
+    letter-spacing: 0.6em;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 28px;
-}
-
-.center-letter-spacing {
-    letter-spacing: 84px;
-}
-
-.right-letter-spacing {
-    letter-spacing: 29px;
+    letter-spacing: 0.6em;
 }
 
 .letter-spacing-right-extended {
-    letter-spacing: 18px;
+    letter-spacing: 0.3em;
+}
+
+.right-letter-spacing {
+    letter-spacing: 0;
 }
 
 
@@ -183,7 +189,7 @@
     background-image: url(../images/card-lot-03.jpg);
 }
 
-.lots__descr-card {
+.card__block-descr {
     position: relative;
     z-index: 2;
     padding: 50px 40px;
@@ -217,8 +223,8 @@
 .about {
     display: grid;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(6, 102px);
-    margin-bottom: 129px;
+    grid-template-rows: 15%;
+    margin-bottom: 45px;
 }
 
 .column-left {
@@ -259,7 +265,7 @@
     padding-right: 26px;
 }
 
-.about__text-margin {
+.about__text-indent:not(:last-child) {
     margin-bottom: 25px;
 }
 
@@ -271,12 +277,6 @@
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
-}
-
-.footer__address {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 135%;
 }
 
 .footer__menu {
@@ -302,7 +302,9 @@
 
 .overlay {
     position: absolute;
-    background-color: rgb(0 0 0 / 0.5);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #000;
+    opacity: 0.6;
     width: 100%;
     height: 100%;
     z-index: 1;
